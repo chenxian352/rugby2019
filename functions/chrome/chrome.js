@@ -32,6 +32,9 @@ exports.handler = async (event, context, callback) => {
 
     theTitle = await page.title();
     targetDOM = await page.$eval(targetSelector, e => e.outerHTML);
+    targetDOM = targetDOM.replace("\n", '').
+      replace(/\\n/, '').
+      replace(/\n/, '');
 
     console.log('Page Loaded: ', theTitle)
     console.log('Target DOM HTML: ', targetDOM)
