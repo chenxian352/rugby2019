@@ -589,6 +589,66 @@ p a:focus {
   margin-bottom: 1rem
 }
 
+.pools__item-wrapper--pool-1 .pools__item,.pools__item-wrapper--pool-a .pools__item {
+  background: #54c8e8 url(../i/bg-elements/patterns/pattern-7.png);
+  background-repeat: repeat
+}
+
+@media (-moz-min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio:2) {
+  .pools__item-wrapper--pool-1 .pools__item,.pools__item-wrapper--pool-a .pools__item {
+    background-image:url(../i/bg-elements/patterns/pattern-7@x2.png);
+    background-size: 842px 595px
+  }
+}
+
+.pools__item-wrapper--pool-1 .pools__item:before,.pools__item-wrapper--pool-a .pools__item:before {
+  background: linear-gradient(180deg,#006098,rgba(0,96,152,0))
+}
+
+.pools__item-wrapper--pool-2 .pools__item,.pools__item-wrapper--pool-b .pools__item {
+  background: #f4436c url(../i/bg-elements/patterns/pattern-4.png);
+  background-repeat: repeat
+}
+
+@media (-moz-min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio:2) {
+  .pools__item-wrapper--pool-2 .pools__item,.pools__item-wrapper--pool-b .pools__item {
+    background-image:url(../i/bg-elements/patterns/pattern-4@x2.png);
+    background-size: 222px 389px
+  }
+}
+
+.pools__item-wrapper--pool-2 .pools__item:before,.pools__item-wrapper--pool-b .pools__item:before {
+  background: linear-gradient(180deg,#aa182c,rgba(170,24,44,0))
+}
+
+.pools__item-wrapper--pool-3 .pools__item,.pools__item-wrapper--pool-c .pools__item {
+  background: #2ed9c3 url(../i/bg-elements/patterns/pattern-1.png);
+  background-repeat: repeat
+}
+
+@media (-moz-min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio:2) {
+  .pools__item-wrapper--pool-3 .pools__item,.pools__item-wrapper--pool-c .pools__item {
+    background-image:url(../i/bg-elements/patterns/pattern-1@x2.png);
+    background-size: 80px 46px
+  }
+}
+
+.pools__item-wrapper--pool-3 .pools__item:before,.pools__item-wrapper--pool-c .pools__item:before {
+  background: linear-gradient(180deg,#00837b,rgba(0,131,123,0))
+}
+
+.pools__item-wrapper--pool-4 .pools__item,.pools__item-wrapper--pool-d .pools__item {
+  background: #993dbb url(../i/bg-elements/patterns/pattern-5.png);
+  background-repeat: repeat
+}
+
+@media (-moz-min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio:2) {
+  .pools__item-wrapper--pool-4 .pools__item,.pools__item-wrapper--pool-d .pools__item {
+    background-image:url(../i/bg-elements/patterns/pattern-5@x2.png);
+    background-size: 73px 73px
+  }
+}
+
 .pools__item-wrapper--pool-4 .pools__item:before,.pools__item-wrapper--pool-d .pools__item:before {
   background: linear-gradient(180deg,#490e67,rgba(73,14,103,0))
 }
