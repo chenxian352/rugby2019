@@ -2357,11 +2357,20 @@ p a:focus {
   font-size: 1rem;
   color: #fde021;
   margin-bottom: .2rem;
-  text-align: center
+  text-align: center;
+  display: none;
+}
+
+.pools__heading {
+  font-size: 1rem;
+  color: #fde021;
+  margin-bottom: .2rem;
+  text-align: center;
+  display: none;
 }
 
 .pools__item-header {
-  font-size: 2.5rem;
+  font-size: 6.5rem;
   margin-bottom: 1.7rem;
   text-align: center
 }
@@ -2373,12 +2382,11 @@ p a:focus {
 
 .pools__header-row {
   margin-bottom: .3rem;
-  font-size: .9rem
+  font-size: 2.9rem
 }
 
 .pools__header-cell {
-  opacity: .6;
-  height: 2rem;
+  height: 7rem;
   padding: 0 .5rem;
   min-width: 2.5rem
 }
@@ -2418,7 +2426,7 @@ p a:focus {
 
 .pools__cell {
   padding-bottom: .4rem;
-  font-size: 1.2rem
+  font-size: 2.9rem
 }
 
 .pools__cell--wins .pools__cell-content {
@@ -2449,14 +2457,14 @@ p a:focus {
 }
 
 .pools__cell--points .pools__cell-content {
-  font-size: 2rem
+  font-size: 5rem
 }
 
 .pools__cell-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4.5rem;
+  height: 9.5rem;
   width: 100%;
   background-color: rgba(35,35,35,.3)
 }
@@ -2510,4 +2518,26 @@ p a:focus {
   .pools .widget__header {
     margin-bottom:1rem
   }
+}
+
+.bkg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bkg .gradient {
+  background: linear-gradient(#00687abd 0%,#000000ad 50%);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.bkg-img {
+  background: url('footer-image-desktop.jpg') no-repeat bottom center;
+  background-size: cover;
+  height: 100%;
 }
