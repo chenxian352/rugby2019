@@ -4,6 +4,8 @@ const puppeteer = require('puppeteer-core')
 exports.handler = async (event, context, callback) => {
   let theTitle = null
   let browser = null
+  let targetDOM = null
+  const targetSelector = '.pools__items-wrapper'
 
   console.log('Spawning Chrome Headless')
 
@@ -26,9 +28,10 @@ exports.handler = async (event, context, callback) => {
       waitUntil: ["domcontentloaded", "networkidle0"]
     })
 
-    await page.waitForSelector('.pools__items-wrapper')
+    await page.waitForSelector(targetSelector)
 
     theTitle = await page.title();
+    await page.$eval(targetSelector, e => targetDOM = e.innerHTML);
 
     console.log('Page Loaded: ', theTitle)
 
@@ -51,6 +54,7 @@ exports.handler = async (event, context, callback) => {
     statusCode: 200,
     body: JSON.stringify({
       title: theTitle,
+      targetDOM: targetDOM
     })
   })
 }
