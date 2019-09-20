@@ -2504,17 +2504,6 @@ p a:focus {
   .pools .widget__header,.pools__tabs-container {
     display: block
   }
-
-  .pools__item-wrapper {
-    display: none;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 0
-  }
-
-  .pools__item-wrapper.active {
-    display: block
-  }
 }
 
 @media (max-width: 31.24em) {
