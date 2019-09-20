@@ -34,6 +34,7 @@ exports.handler = async (event, context, callback) => {
     await page.$eval(targetSelector, e => targetDOM = e.innerHTML);
 
     console.log('Page Loaded: ', theTitle)
+    console.log('Target DOM HTML: ', targetDOM)
 
   } catch (error) {
     console.log('error', error)
