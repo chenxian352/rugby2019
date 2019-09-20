@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rugby World Cup 2019</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    fetch('https://clever-wozniak-e6ca8d.netlify.com/.netlify/functions/chrome', {
+      mode: 'no-cors'
+    }).then(response => response.json()).then(result => {
+      console.log(result)
+    })
+</script>
+</body>
+</html>
