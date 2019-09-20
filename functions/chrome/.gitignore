@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/functions/one/node_modules
 package-lock.json
 
 # testing
@@ -10,8 +9,6 @@ package-lock.json
 
 # production
 /build
-/functions-build
-.netlify
 
 # misc
 .DS_Store

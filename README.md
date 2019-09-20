@@ -1,3 +1,12 @@
+# Headless chrome netlify functions
+
+> Run headless chrome in netlify lambda functions
+
+## How
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=./functions/chrome/chrome.js) -->
+<!-- The below code snippet is automatically added from ./functions/chrome/chrome.js -->
+```js
 const chromium = require('chrome-aws-lambda')
 const puppeteer = require('puppeteer-core')
 
@@ -52,3 +61,5 @@ exports.handler = async (event, context, callback) => {
     })
   })
 }
+```
+<!-- AUTO-GENERATED-CONTENT:END -->
