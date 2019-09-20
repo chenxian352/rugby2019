@@ -31,10 +31,7 @@ exports.handler = async (event, context, callback) => {
     await page.waitForSelector(targetSelector)
 
     theTitle = await page.title();
-    await page.$eval(targetSelector, e => {
-      console.log('ELEMENT', e)
-      targetDOM = e.outerHTML
-    });
+    targetDOM = await page.$eval(targetSelector, e => e.outerHTML);
 
     console.log('Page Loaded: ', theTitle)
     console.log('Target DOM HTML: ', targetDOM)
