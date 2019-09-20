@@ -27,7 +27,7 @@ exports.handler = async (event, context, callback) => {
     await page.goto(targetUrl, {
       waitUntil: ["domcontentloaded", "networkidle0"]
     })
-
+    await page.waitFor(3000)
     await page.waitForSelector(targetSelector)
 
     theTitle = await page.title();
