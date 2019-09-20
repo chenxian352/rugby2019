@@ -2362,11 +2362,17 @@ p a:focus {
 }
 
 .pools__heading {
-  font-size: 1rem;
+  font-size: 12rem;
+  color: #ffffff;
+  margin-bottom: .2rem;
+  text-align: center;
+}
+
+.pools__heading_hashtag {
+  font-size: 6rem;
   color: #fde021;
   margin-bottom: .2rem;
   text-align: center;
-  display: none;
 }
 
 .pools__item-header {
@@ -2540,4 +2546,8 @@ p a:focus {
   background: url('footer-image-desktop.jpg') no-repeat bottom center;
   background-size: cover;
   height: 100%;
+}
+
+#target-container {
+  padding: 4rem;
 }
