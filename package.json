@@ -3,23 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "prezip": "rm -rf functions-build && mkdir functions-build",
     "zip": "cd functions/chrome && npm install && chmod -R 777 node_modules && zip -r chrome.zip *",
     "postzip": "mv functions/chrome/chrome.zip functions-build",
-    "prebuild": "npm run zip",
-    "build": "react-scripts build",
-    "docs": "md-magic --path '**/*.md' --ignore 'node_modules'"
+    "start": "npm run zip",
+    "local": "'netlify-lambda build functions/chrome"
   },
   "main": "index.js",
-  "devDependencies": {
-    "markdown-magic": "^0.1.25"
-  },
+  "devDependencies": {},
   "author": "",
   "license": "MIT"
 }
