@@ -4,7 +4,9 @@ const puppeteer = require('puppeteer-core')
 exports.handler = async (event, context, callback) => {
   let theTitle = null
   let browser = null
-  console.log('spawning chrome headless')
+
+  console.log('Spawning Chrome Headless')
+
   try {
     const executablePath = await chromium.executablePath
 
@@ -17,18 +19,18 @@ exports.handler = async (event, context, callback) => {
 
     // Do stuff with headless chrome
     const page = await browser.newPage()
-    const targetUrl = 'https://davidwells.io'
+    const targetUrl = 'https://www.rugbyworldcup.com/'
 
     // Goto page and then do stuff
     await page.goto(targetUrl, {
       waitUntil: ["domcontentloaded", "networkidle0"]
     })
 
-    await page.waitForSelector('.Sidebar--about--2lYWu')
+    await page.waitForSelector('.pools__items-wrapper')
 
     theTitle = await page.title();
 
-    console.log('done on page', theTitle)
+    console.log('Page Loaded: ', theTitle)
 
   } catch (error) {
     console.log('error', error)
