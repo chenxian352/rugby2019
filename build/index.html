@@ -7,9 +7,7 @@
 <body>
 
 <script type="text/javascript">
-    fetch('https://clever-wozniak-e6ca8d.netlify.com/.netlify/functions/chrome', {
-      mode: 'no-cors'
-    }).then(response => response.json()).then(result => {
+    fetch('https://clever-wozniak-e6ca8d.netlify.com/.netlify/functions/chrome').then(response => response.json()).then(result => {
       console.log(result)
     })
 </script>
