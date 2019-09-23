@@ -42,22 +42,19 @@ exports.handler = async (event, context, callback) => {
 
     console.log('Updating GraphCMS.')
 
-    await fetch("https://api-apeast.graphcms.com/v1/ck0vzjke6268t01d490ee68nw/master", {
+    await fetch('https://api-apeast.graphcms.com/v1/ck0vzjke6268t01d490ee68nw/master', {
       method: 'POST',
-      headers: {
-        "Content-type": "application/json"
-      },
       body: JSON.stringify({
         query: `
-          mutation {
-            updateDomHtml(
-              where: { id: "ck0vzt2ns1hq60830o1rk92fu" }
-              data: { body: ${targetDOM} }
-            ) {
-              id
-              body
-            }
+        mutation {
+          updateDomHtml(
+            where: { id: "ck0vzt2ns1hq60830o1rk92fu" }
+            data: { body: ${targetDOM} }
+          ) {
+            id
+            body
           }
+        }
         `
       })
     })
