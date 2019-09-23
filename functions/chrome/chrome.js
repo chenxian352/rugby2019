@@ -39,25 +39,6 @@ exports.handler = async (event, context, callback) => {
     console.log('Page Loaded: ', theTitle)
     console.log('Target DOM HTML: ', targetDOM)
 
-    console.log('Updating GraphCMS.')
-
-    fetch('https://api-apeast.graphcms.com/v1/ck0vzjke6268t01d490ee68nw/master', {
-      method: 'POST',
-      body: {
-        query: `
-        mutation {
-          updateDomHtml(
-            where: { id: "ck0vzt2ns1hq60830o1rk92fu" }
-            data: { body: ${targetDOM} }
-          ) {
-            id
-            body
-          }
-        }
-        `
-      }
-    })
-
   } catch (error) {
     console.log('error', error)
     return callback(null, {
