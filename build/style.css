@@ -2405,7 +2405,8 @@ p a:focus {
   background-color: rgba(35,35,35,.3);
   padding: 0 .2rem;
   position: relative;
-  z-index: 100
+  z-index: 100;
+  font-size: 16px;
 }
 
 .pools__header-cell--padding {
@@ -2544,5 +2545,4 @@ p a:focus {
 }
 
 #target-container {
-  padding: 0 4rem;
 }
