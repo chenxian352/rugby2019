@@ -10,7 +10,7 @@ exports.handler = async (event, context, callback) => {
 
   let getCachedDOMHTML = false;
   console.log('Fetching GraphCMS')
-  await fetch("https://api-apeast.graphcms.com/v1/ck0vzjke6268t01d490ee68nw/master", {
+  await fetch("https://api-uswest.graphcms.com/v1/ck0w3i8cv2du401eb3dtm586l/master", {
     method: 'POST',
     headers: {
       "Content-type": "application/json"
@@ -18,7 +18,7 @@ exports.handler = async (event, context, callback) => {
     body: JSON.stringify({
       query: `
         query {
-          domHtml(where: {id: "ck0vzt2ns1hq60830o1rk92fu"}) {
+          domHtml(where: {id: "ck0w3jgbxny9l0998orsk5od8"}) {
             jsNow
             id
             body
@@ -75,7 +75,7 @@ exports.handler = async (event, context, callback) => {
 
       let jsNow = JSON.stringify(Date.now().toString())
 
-      await fetch("https://api-apeast.graphcms.com/v1/ck0vzjke6268t01d490ee68nw/master", {
+      await fetch("https://api-uswest.graphcms.com/v1/ck0w3i8cv2du401eb3dtm586l/master", {
         method: 'POST',
         headers: {
           "Content-type": "application/json"
@@ -84,7 +84,7 @@ exports.handler = async (event, context, callback) => {
           query: `
           mutation {
             updateDomHtml(
-              where: { id: "ck0vzt2ns1hq60830o1rk92fu" }
+              where: { id: "ck0w3jgbxny9l0998orsk5od8" }
               data: { 
                 body: ${targetDOM}
                 jsNow: ${jsNow} 
