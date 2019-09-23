@@ -2362,21 +2362,15 @@ p a:focus {
 }
 
 .pools__heading {
-  font-size: 12rem;
+  font-size: 7rem;
   color: #ffffff;
   margin-bottom: .2rem;
   text-align: center;
 }
 
-.pools__heading_hashtag {
-  font-size: 6rem;
-  color: #fde021;
-  margin-bottom: .2rem;
-  text-align: center;
-}
 
 .pools__item-header {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   margin-bottom: 1.7rem;
   text-align: center
 }
@@ -2388,7 +2382,7 @@ p a:focus {
 
 .pools__header-row {
   margin-bottom: .3rem;
-  font-size: 2.9rem
+  font-size: 2rem
 }
 
 .pools__header-cell {
@@ -2432,7 +2426,7 @@ p a:focus {
 
 .pools__cell {
   padding-bottom: .4rem;
-  font-size: 2.9rem
+  font-size: 2.5rem
 }
 
 .pools__cell--wins .pools__cell-content {
@@ -2470,7 +2464,7 @@ p a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 9.5rem;
+  height: 7.5rem;
   width: 100%;
   background-color: rgba(35,35,35,.3)
 }
@@ -2549,5 +2543,5 @@ p a:focus {
 }
 
 #target-container {
-  padding: 4rem;
+  padding: 0 4rem;
 }
