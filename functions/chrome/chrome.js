@@ -1,5 +1,6 @@
 const chromium = require('chrome-aws-lambda')
 const puppeteer = require('puppeteer-core')
+const fetch = require('node-fetch')
 
 exports.handler = async (event, context, callback) => {
   let theTitle = null
@@ -41,7 +42,7 @@ exports.handler = async (event, context, callback) => {
 
     console.log('Updating GraphCMS.')
 
-    fetch('https://api-apeast.graphcms.com/v1/ck0vzjke6268t01d490ee68nw/master', {
+    await fetch('https://api-apeast.graphcms.com/v1/ck0vzjke6268t01d490ee68nw/master', {
       method: 'POST',
       body: {
         query: `
