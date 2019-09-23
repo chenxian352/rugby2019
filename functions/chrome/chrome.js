@@ -44,7 +44,7 @@ exports.handler = async (event, context, callback) => {
 
     await fetch('https://api-apeast.graphcms.com/v1/ck0vzjke6268t01d490ee68nw/master', {
       method: 'POST',
-      body: {
+      body: JSON.stringify({
         query: `
         mutation {
           updateDomHtml(
@@ -56,7 +56,7 @@ exports.handler = async (event, context, callback) => {
           }
         }
         `
-      }
+      })
     })
     .then(response => response.json())
     .then(data => (
