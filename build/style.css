@@ -2364,8 +2364,9 @@ p a:focus {
 .pools__heading {
   font-size: 7rem;
   color: #ffffff;
-  margin-bottom: .2rem;
+  margin-bottom: 1.3rem;
   text-align: center;
+  margin-top: 2.7rem;
 }
 
 
