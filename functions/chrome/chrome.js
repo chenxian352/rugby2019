@@ -67,14 +67,12 @@ exports.handler = async (event, context, callback) => {
         replace(/\\n/, '').
         replace(/\n/, '');
       targetDOM = JSON.stringify(targetDOM)
-
       console.log('Page Loaded: ', theTitle)
       console.log('Target DOM HTML: ', targetDOM.substr(0, 100))
 
       console.log('Updating GraphCMS.')
 
-      let jsNow = JSON.stringify(Date.now())
-
+      let jsNow = Date.now()
       await fetch("https://api-apeast.graphcms.com/v1/ck0vzjke6268t01d490ee68nw/master", {
         method: 'POST',
         headers: {
