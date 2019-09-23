@@ -38,7 +38,7 @@ exports.handler = async (event, context, callback) => {
       replace(/\n/, '');
 
     console.log('Page Loaded: ', theTitle)
-    console.log('Target DOM HTML: ', targetDOM)
+    console.log('Target DOM HTML: ', targetDOM.substr(0, 100))
 
     console.log('Updating GraphCMS.')
 
