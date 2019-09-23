@@ -58,10 +58,6 @@ exports.handler = async (event, context, callback) => {
         `
       }
     })
-    .then(response => response.json())
-    .then(data => (
-      console.log('Updated GraphCMS', data)
-    ))
 
   } catch (error) {
     console.log('error', error)
