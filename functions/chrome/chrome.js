@@ -32,7 +32,7 @@ exports.handler = async (event, context, callback) => {
     if ( (data.data.jsNow + 600000) > Date.now() ) {
       console.log('Cached GraphCMS is updated in 10 minutes', data)
       getCachedDOMHTML = true
-      targetDOM = data.data.body
+      targetDOM = JSON.parse(data.data.body)
     }
   })
 
