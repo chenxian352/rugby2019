@@ -22,7 +22,6 @@
     //     replace(/\n/, '')
     // })
     $.get('https://clever-wozniak-e6ca8d.netlify.com/.netlify/functions/chrome', function (result) {
-      console.log(result)
       document.querySelector('#target-container').innerHTML = result.targetDOM.replace("\n", '').
         replace(/\\n/, '').
         replace(/\n/, '')
