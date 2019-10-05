@@ -2337,7 +2337,7 @@ p a:focus {
   padding: 1.5rem 1rem;
   position: relative;
   width: 100%;
-  min-height: 550px
+  min-height: 550px;
 }
 
 .pools__item:before {
